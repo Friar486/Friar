@@ -1,0 +1,156 @@
+*{
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+}
+html{
+  font-size: 62.5%;
+  font-family: Arial, Helvetica, sans-serif;
+}
+/*Header star*/
+.header{
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  position: fixed;
+  background-color: #ffe1e3;
+  width: 100vw;
+  border-bottom: 1px solid gray;
+  z-index: 2;
+}
+.imgLogo{
+  width: 50px;
+}
+.buttonHeader{
+  width: 50px;
+  height: 40px;
+  border: 1px solid black;
+  border-radius: 20px;
+}
+/*
+.buttSearch{
+}
+.buttMesg{
+}
+.buttNoft{
+}
+.buttMenu{
+}
+*/
+/*Main star*/
+.main{
+  padding-top: 60px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.sectionOne{
+  border-bottom: 1px solid gray;
+  padding-bottom: 7px;
+  width: 100vw;
+  display: flex;
+  justify-content: center;
+}
+.textArea-sectionOne{
+  border: 1px solid gray;
+  resize: none;
+  border-radius: 20px;
+  outline: none;
+}
+/*Section Two*/
+.sectionTwo{
+  padding: 5px;
+  border-bottom: 1px solid gray;
+}
+.titulo{
+  font-size: 1.8rem;
+  text-align: center;
+}
+.setionDestacadas{
+  width: 100vw;
+  display: flex;
+  justify-content: space-evenly;
+}
+.minPerfil{
+  background-color: red;
+  width: 20px;
+  height: 20px;
+  border-radius: 8px;
+  position: relative;
+  top: 23px;
+  left: 3px;
+  border: 1px solid white;
+  z-index: 1;
+}
+.imgDestacada{
+  width: 10rem;
+  border-radius: 8px;
+  border: 1px solid gray;
+}
+/*Section Three*/
+.header-publicacion{
+  padding: 5px 0 0 5px;
+  width: 100vw;
+  display: grid;
+  grid-template: auto auto / auto 1fr;
+  grid-template-areas: "minPerfil LastName"
+                       "minPerfil date";
+  margin-bottom: 10px;
+}
+.sectionThree div a{
+  text-decoration: none;
+}
+.minPerfil-sectionThree{
+  width: 50px;
+  grid-area: minPerfil;
+  border-radius: 20px;
+}
+.lastName{
+  font-size: 1.6rem;
+  padding-left: 5px;
+  grid-area: LastName;
+  color: black;
+  position: relative;
+  top:  4px;
+}
+.date{
+  font-size: 1.3rem;
+  padding-left: 5px;
+  grid-area: date;
+  color: black;
+  position: relative;
+  bottom: 2px;
+}
+.imgPublicacion{
+  width: 100vw;
+}
+.textPublicacion{
+  font-size: 1rem;
+  padding: 5px 0 0px 2px;
+}
+.sectionThree-sectionBottons{
+  display: flex;
+  justify-content: space-between;
+}
+.buttonPublicacion-mensajes{
+  display: inline-block;
+  background-color: rgba(197, 45, 45, 0.829);
+  border: 1px solid black;
+  border-radius: 10px;
+  width: 30px;
+  height: 20px;
+  margin: 2px 0 0 5px;
+}
+.buttonPublicacion-reacciones{
+  display: inline-block;
+  background-color: rgba(75, 197, 45, 0.829);
+  border: 1px solid black;
+  border-radius: 10px;
+  width: 30px;
+  height: 20px;
+  margin: 2px 5px 0 0;
+}
+.separador{
+  background-color: ghostwhite;
+  height: 10px;
+}
