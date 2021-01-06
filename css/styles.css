@@ -16,7 +16,7 @@ html{
   background-color: #ffe1e3;
   width: 100vw;
   border-bottom: 1px solid gray;
-  z-index: 2;
+  z-index: 3;
 }
 .imgLogo{
   width: 50px;
@@ -26,6 +26,25 @@ html{
   height: 40px;
   border: 1px solid black;
   border-radius: 20px;
+}
+.burgerMenu {
+  width: 100vw;
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  padding: 5px;
+  background-color: red;
+  position: fixed;
+  z-index: 2;
+  left: 100vw;
+  top: 53.5px;
+  transition:  .3s;
+}
+
+
+
+.is-active {
+  left: 0;
 }
 /*
 .buttSearch{
