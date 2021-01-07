@@ -8,21 +8,31 @@ html{
   font-family: Arial, Helvetica, sans-serif;
 }
 /*Header star*/
+header{
+  background-color: #ffe1e3;
+  z-index: 3;
+  position: fixed;
+  width: 100vw;
+}
 .header{
   display: flex;
-  justify-content: space-around;
+  justify-content: space-between;
   align-items: center;
   position: fixed;
-  background-color: #ffe1e3;
   width: 100vw;
+  background-color: #ffe1e3;
   border-bottom: 1px solid gray;
   z-index: 3;
 }
-.imgLogo{
-  width: 50px;
-}
 .buttonHeader{
-  width: 50px;
+  width: 60px;
+  height: 40px;
+  border: 1px solid black;
+  border-radius: 20px;
+}
+.buttonDarkmode{
+  margin-top: 15px;
+  width: 80px;
   height: 40px;
   border: 1px solid black;
   border-radius: 20px;
@@ -33,32 +43,70 @@ html{
   display: flex;
   flex-direction: column;
   padding: 5px;
-  background-color: red;
+  background-color: bisque;
   position: fixed;
   z-index: 2;
   left: 100vw;
   top: 53.5px;
   transition:  .3s;
 }
-
-
-
 .is-active {
   left: 0;
 }
-/*
-.buttSearch{
+.containerMenuDesplegable{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  height: 86%;
 }
-.buttMesg{
+.profileImg{
+  background-color: chocolate;
+  width: 50vw;
+  border-radius: 80px;
+}
+.menu-menuDesplegable{
+  margin-top: 35px;
+}
+.menu-menuDesplegable li{
+  list-style: none;
+  margin-top: 5px;
+  font-size: 1.6rem;
+  text-align: center;
+}
+.footerMenuDesplegable{
+  width: 100vw;
+  text-align: center;
+  font-size: 1.2rem;
+}
+.logo{
+  text-decoration: none;
+  color: black;
+  font-weight: bold;
+  font-size: 2rem;
+  text-align: center;
 }
 .buttNoft{
+  width: 30px;
+  position: relative;
+  left: 42px;
+}
+.buttSearch{
+  width: 30px;
+  position: relative;
+  right: px;
+}
+.buttMesg{
+  width: 30px;
+  position: relative;
+  left: 190px;
 }
 .buttMenu{
+  width: 40px;
 }
-*/
+
 /*Main star*/
 .main{
-  padding-top: 60px;
+  padding-top: 76px;
   display: flex;
   flex-direction: column;
   align-items: center;
